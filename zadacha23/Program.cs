@@ -5,9 +5,9 @@
 5 ->1, 8, 27, 64, 125 
 */
 
-{
+
 Console.Write("Введите любое положительное число N: ");
-    {
+    
     int num = int.Parse(Console.ReadLine());
     for (int i = 1; num >= i; i++)
         {
@@ -17,5 +17,5 @@ Console.Write("Введите любое положительное число N
         {
          Console.WriteLine("введенное число не является положительным");
         }
-    }   
-}
+     
+

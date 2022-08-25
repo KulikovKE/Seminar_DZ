@@ -7,27 +7,25 @@
 23432 -> да
 */
 
-{
-    Console.WriteLine("Введите пятизначное число");
-    int num = int.Parse(Console.ReadLine());
-    int kchisel = (int)Math.Log10(num) + 1; // количество цифр в числе
+Console.WriteLine("Введите пятизначное число");
+int num = int.Parse(Console.ReadLine());
+int kchisel = (int)Math.Log10(num) + 1; // количество цифр в числе
+    
+        if (kchisel==5)
         {
-            if (kchisel==5)
-            {
-                int a = num / 1000;
-                int b = num % 100;
-                int c = (b%10*10)+(a/10);
+            int a = num / 1000;
+            int b = num % 100;
+                int c = (b%10*10)+(a%10);
                     
-                    if (a/c==1)
-                    {
-                         Console.WriteLine("введенное число является палиндромом");
-                    }
-                    else
-                    {
-                         Console.WriteLine("введенное число не является палиндромом");
-                    } 
-             }
-             
-            else  Console.WriteLine("введенное число не является пятизначным");
+                if (a==c)
+                {
+                    Console.WriteLine("введенное число является палиндромом");
+                }
+                else
+                {
+                    Console.WriteLine("введенное число не является палиндромом");
+                } 
         }
-}
+            else  Console.WriteLine("введенное число не является пятизначным");
+    
+
