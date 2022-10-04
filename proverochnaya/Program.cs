@@ -23,4 +23,17 @@ void ConditionArray(string[] words, string[] resultArray) // в методе п�
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+ConditionArray(words, resultArray);
+PrintArray(resultArray);     
+      
+
 
